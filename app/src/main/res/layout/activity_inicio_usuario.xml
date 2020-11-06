@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23C33D"
+
+    tools:context=".InicioUsuario">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="INGRESE A SU PERFIL GPS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow>
+
+            <EditText
+
+                android:id="@+id/editUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="USUARIO"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/editContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColorHint="@color/white"
+                android:hint="CONTRASEÑA" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="INGRESAR"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+
+
+</TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

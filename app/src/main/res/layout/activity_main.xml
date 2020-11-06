@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23C33D"
+
+    tools:context=".InicioUsuario">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="REGISTRE NUEVO USUARIO"
+        android:textColor="#C30E30"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow>
+
+            <EditText
+
+                android:id="@+id/editNuevoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="USUARIO"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/editNuevapassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColorHint="@color/white"
+                android:hint="CONTRASEÑA" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editRpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="REPITA CONTRASEÑA"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/editSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="INGRESE SU SEXO"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editNomCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="INGRESE SUS NOMBRES"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editApllCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="INGRESE SUS APELLIDOS"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+        </TableRow>
+
+
+        <TableRow>
+        </TableRow>
+        <TableRow>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnResgistrar"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Registrar"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Si tienes cuenta !!\n inicia Sesion"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
