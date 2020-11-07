@@ -4,6 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#23C33D"
+    android:textColor="#E7E4E4"
     tools:context=".PerfilUsuario">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C30E30"
+        android:layout_marginTop="28dp"
+        android:textSize="20dp"
+        android:text="REGISTRO DE UBICACIONES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TableLayout
+        android:layout_width="407dp"
+        android:layout_height="708dp"
+        android:paddingTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableRow>
+
+
+            <EditText
+                android:id="@+id/editLugarV"
+                android:layout_width="50dp"
+                android:layout_height="67dp"
+                android:layout_margin="15dp"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:hint="Nombre del lugar \na visitar en arica"
+                android:textColor="#AAC5D8"
+                android:textSize="18dp">
+
+            </EditText>
+
+        </TableRow>
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editLongitud"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:hint="Ingrese su Longitud"
+                android:textColor="#AAC5D8"
+                android:textSize="18dp">
+
+            </EditText>
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editLatitud"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:hint="Ingrese su Latitud"
+                android:textColor="#AAC5D8"
+                android:textSize="18dp">
+
+            </EditText>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:text="GUARDAR DATOS"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnVerDaatosFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:text="VER MIS TUS DATOS \n CON LATITUD Y LONGITUD"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnVerPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:text="VER PUNTOS GUARDADOS EN EL MAPA"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnBusquedaLibre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:text="BUSQUEDA LIBRE A VOLAR!!"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

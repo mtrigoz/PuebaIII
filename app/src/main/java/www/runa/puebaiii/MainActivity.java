@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText NuevoUsuario_edit, Nuevapassword_edit, Rpassword_edit,editSex, editNomCompleto,editApllCompleto;
+    EditText NuevoUsuario_edit, Nuevapassword_edit, Rpassword_edit,Sex_edit, editNomCompleto,editApllCompleto;
     Button btnResgistrar, btnLogin;
     ConexUsr DB;
     @Override
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         NuevoUsuario_edit = (EditText) findViewById(R.id.editNuevoUsuario);
         Nuevapassword_edit = (EditText) findViewById(R.id.editNuevapassword);
         Rpassword_edit = (EditText) findViewById(R.id.editRpassword);
-        editSex = (EditText)findViewById(R.id.editSex);
+        Sex_edit = (EditText)findViewById(R.id.editSex);
         editNomCompleto = (EditText)findViewById(R.id.editNomCompleto);
         editApllCompleto = (EditText)findViewById(R.id.editApllCompleto);
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 String user  = NuevoUsuario_edit.getText().toString();
                 String pass = Nuevapassword_edit.getText().toString();
                 String repass = Rpassword_edit.getText().toString();
-                String sexo = editSex.getText().toString();
+                String Sexo = Sex_edit.getText().toString();
                 String NomCompleto = editNomCompleto.getText().toString();
                 String ApllCompleto = editNomCompleto.getText().toString();
 
@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
                     if(pass.equals(repass)){
                         Boolean checkusername = DB.checkusername(user);
                         if(checkusername==false){
-                            Boolean insert = DB.insertData(user, pass);
+                            Boolean insert = DB.insertData(user, pass,Sexo,ApllCompleto,NomCompleto);
                             if(insert==true){
                                 Toast.makeText(MainActivity.this, "Registro Exitoso", Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(getApplicationContext(), PerfilUsuario.class);
+                                Intent intent = new Intent(getApplicationContext(), InicioUsuario.class);
                                 startActivity(intent);
                             }else{
                                 Toast.makeText(MainActivity.this, "Registro imposible", Toast.LENGTH_LONG).show();
