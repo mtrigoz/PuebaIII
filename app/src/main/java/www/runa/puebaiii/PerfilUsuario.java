@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class PerfilUsuario extends AppCompatActivity {
 
-    Button btnVerDaatosFormulario,btnBuscarPuntos,button_Guardar,btnBusquedaLibre;
+    Button btnVerDaatosFormulario,btnGenerarPuntos,button_Guardar,btnBusquedaLibre;
     ////
     EditText editLugarV, editLatitud, editLongitud;
     ////
@@ -29,6 +29,7 @@ public class PerfilUsuario extends AppCompatActivity {
         btnVerDaatosFormulario = (Button)findViewById(R.id.btnVerDaatosFormulario);
         btnBusquedaLibre = (Button)findViewById(R.id.btnBusquedaLibre);
         button_Guardar = (Button)findViewById(R.id.btnGuardar);
+        btnGenerarPuntos = (Button)findViewById(R.id.btnGenerarPuntos);
      ////////////////////////////////////////////////////////////////////////////////////////////
         editLugarV = (EditText)findViewById(R.id.editLugarV);
         editLatitud = (EditText)findViewById(R.id.editLatitud);
@@ -36,6 +37,17 @@ public class PerfilUsuario extends AppCompatActivity {
 
      ////////////////////////////////////////////////////////////////////////////////////////////
         bdformulario = new ConexFom(this);
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        btnGenerarPuntos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),GuardarPuntos.class);
+                startActivity(intent);
+            }
+        });
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
 
      ////////////////////////////////////////////////////////////////////////////////////////////
         btnVerDaatosFormulario.setOnClickListener(new View.OnClickListener() {

@@ -23,8 +23,8 @@
 
 
     <TableLayout
-        android:layout_width="407dp"
-        android:layout_height="708dp"
+        android:layout_width="334dp"
+        android:layout_height="569dp"
         android:paddingTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
             <EditText
                 android:id="@+id/editLugarV"
                 android:layout_width="50dp"
-                android:layout_height="67dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:background="#F6F6F6"
                 android:gravity="center"
@@ -49,6 +49,7 @@
             </EditText>
 
         </TableRow>
+
         <TableRow>
 
             <EditText
@@ -114,12 +115,12 @@
         <TableRow>
 
             <Button
-                android:id="@+id/btnVerPuntos"
+                android:id="@+id/btnGenerarPuntos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:background="#F88110"
-                android:text="VER PUNTOS GUARDADOS EN EL MAPA"
+                android:text="Generar Puntos"
                 android:textColor="#FFFFFF"
                 android:textSize="18dp" />
 
