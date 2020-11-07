@@ -10,5 +10,8 @@ public class GuardarPuntos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guardar_puntos);
+
+
+
     }
 }
