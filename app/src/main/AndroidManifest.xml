@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PuebaIII">
-        <activity android:name=".Buscarlnglat"></activity>
+        <activity android:name=".GuardarPuntos"></activity>
+        <activity android:name=".Buscarlnglat" />
         <activity android:name=".InicioUsuario" />
         <activity android:name=".PerfilUsuario" />
         <!--

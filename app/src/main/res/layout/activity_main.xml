@@ -25,12 +25,12 @@
 
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="403dp"
+        android:layout_height="672dp"
         android:layout_marginTop="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
@@ -50,6 +50,7 @@
         </TableRow>
 
         <TableRow>
+
             <EditText
                 android:id="@+id/editNuevapassword"
                 android:layout_width="match_parent"
@@ -58,9 +59,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:hint="CONTRASEÑA"
                 android:textColorHint="@color/white"
-                android:hint="CONTRASEÑA" />
+                android:textSize="18dp" />
         </TableRow>
 
         <TableRow>
@@ -79,6 +80,7 @@
         </TableRow>
 
         <TableRow>
+
             <EditText
                 android:id="@+id/editSex"
                 android:layout_width="match_parent"
@@ -91,7 +93,9 @@
                 android:textColorHint="@color/white"
                 android:textSize="18dp" />
         </TableRow>
+
         <TableRow>
+
             <EditText
                 android:id="@+id/editNomCompleto"
                 android:layout_width="match_parent"
@@ -104,7 +108,9 @@
                 android:textColorHint="@color/white"
                 android:textSize="18dp" />
         </TableRow>
+
         <TableRow>
+
             <EditText
                 android:id="@+id/editApllCompleto"
                 android:layout_width="match_parent"
@@ -119,11 +125,12 @@
         </TableRow>
 
 
+        <TableRow></TableRow>
+
+        <TableRow></TableRow>
+
         <TableRow>
-        </TableRow>
-        <TableRow>
-        </TableRow>
-        <TableRow>
+
             <Button
                 android:id="@+id/btnResgistrar"
                 android:layout_width="366dp"

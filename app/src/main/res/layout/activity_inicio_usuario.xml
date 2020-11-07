@@ -23,17 +23,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="385dp"
+        android:layout_height="489dp"
         android:layout_marginTop="120dp"
         android:paddingTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.17">
 
         <TableRow>
 
@@ -50,6 +50,7 @@
         </TableRow>
 
         <TableRow>
+
             <EditText
                 android:id="@+id/editContraseña"
                 android:layout_width="match_parent"
@@ -58,12 +59,13 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:hint="CONTRASEÑA"
                 android:textColorHint="@color/white"
-                android:hint="CONTRASEÑA" />
+                android:textSize="18dp" />
         </TableRow>
 
         <TableRow>
+
             <Button
                 android:id="@+id/btnIngresar"
                 android:layout_width="366dp"
@@ -79,6 +81,5 @@
         </TableRow>
 
 
-
-</TableLayout>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
